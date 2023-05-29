@@ -35,46 +35,55 @@
             color: whitesmoke;
             font-size: 25px;
         }
-    </style>
-    <div class="fixed-text1">
-        工厂安全事故是一项极其重要的议题，每年都会发生</br>
-        许多不同类型的工厂安全事故，严重影响工人的生命</br>
-        安全、企业的经济效益以及社会的稳定。
-    </div>
-    <style>
-        .fixed-text2 {
-            position: absolute;
-            top: 400px;
-            left: 150px;
-            color: whitesmoke;
-            font-size: 25px;
+
+        .fixed-text1::after {
+            content: '|';
+            color: red;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
     </style>
-    <div class="fixed-text2">
-        为了更好地控制和预防工厂安全事故的发生，有必</br>
-        要对现有数据进行深入分析，找出其规律和成因。
-    </div>
-    <style>
-        .fixed-text3 {
-            position: absolute;
-            top: 570px;
-            left: 150px;
-            color: whitesmoke;
-            font-size: 25px;
-        }
-    </style>
-    <div class="fixed-text3">
-        可视化的主要数据来源于“中国劳工通讯”（CLB）。</br>
-        CLB是位于香港的非政府组织，致力于维护工人权益</br>
-        ，其中一项职能是收集关于中国大陆安全事故的相关</br>
-        资料。
-    </div>
+    <div class="fixed-text1"></div>
+    <script>
+        var test = document.querySelector('.fixed-text1');
+        txt = "工厂安全事故是一项极其重要的议题，每年都会发生/许多不同类型的工厂安全事故，严重影响工人的生命/安全、企业的经济效益以及社会的稳定。//" +
+            "为了更好地控制和预防工厂安全事故的发生，有必/要对现有数据进行深入分析，找出其规律和成因。//" +
+            "可视化的主要数据来源于“中国劳工通讯”（CLB）。/CLB是位于香港的非政府组织，致力于维护工人权益/，其中一项职能是收集关于中国大陆安全事故的相关/资料。//" +
+            "CLB数据库整理了2014年3月至今的安全事故信息，/其中由于2014年的相关数据完整性较差，因此我们/只对从2015年1月到2022年12月的数据进行分析。";
+
+        arrtxt = txt.split('');
+        var i = 0,
+            timer = setInterval(function () {
+                i++;
+                if (arrtxt[i - 1] == '/') {
+                    test.innerHTML = test.innerHTML + '<br>';
+                }
+                else if (arrtxt[i - 1] == '//') {
+                    test.innerHTML = test.innerHTML + '<br>' + '<br>';
+                }
+                else {
+                    test.innerHTML = test.innerHTML + arrtxt[i - 1];
+                }
+                if (i == arrtxt.length) {
+                    clearInterval(timer);
+                }
+            }, 100);
+    </script>
     <style>
         .fixed-img1 {
             position: absolute;
             top: 170px;
             left: 900px;
-            color: rgb(144, 247, 240);
+            color: white;
             font-size: 15px;
         }
     </style>
@@ -87,7 +96,7 @@
             position: absolute;
             top: 470px;
             left: 900px;
-            color: rgb(144, 247, 240);
+            color: white;
             font-size: 15px;
         }
     </style>
