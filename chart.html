@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>统计图表</title>
     <script src="d3/d3.min.js"></script>
+    <script src="d3/d3-v6-tip.js"></script>
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/d3-tip.css">
 </head>
 
 <style>
@@ -30,33 +32,126 @@
     <label class="menu-btn" for="menu_btn">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </label>
+    <style>
+        .fixed-title {
+            position: absolute;
+            top: 40px;
+            left: 550px;
+            color: white;
+            font-size: 70px;
+        }
+    </style>
+    <div class="fixed-title">
+        统计图表展示
+    </div>
+    <div style="position:absolute;top:200px;left:1150px;color:white;font-size:30px;">
+        年份选择：
+    </div>
+    <form name="single" action="" method="" style="position:absolute;top:190px;left:1300px;">
+        <select id="test" name="test" style="height:60px;width:90px;font-size:20px;border-radius:20px">
+            <option value="2014">2014年</option>
+            <option value="2015">2015年</option>
+            <option value="2016">2016年</option>
+            <option value="2017">2017年</option>
+            <option value="2018">2018年</option>
+            <option value="2019">2019年</option>
+            <option value="2020">2020年</option>
+            <option value="2021">2021年</option>
+            <option value="2022">2022年</option>
+        </select>
+    </form>
     <svg width="1400" height="800" id="mainsvg" class="svgs" style='display: block; margin: 0 auto;'></svg>
     <script>
         const svg = d3.select('svg');
         const width = svg.attr('width');
         const height = svg.attr('height');
+        const tip = d3.tip().html((event, d) => `${d.data.type}: 遇难${d.data.number}人`);
+        svg.call(tip);
+        tip.attr('class', 'd3-tip');
+        const tipele = document.getElementsByClassName('d3-tip')[0];
+        const arcGenerator = d3.arc().innerRadius(50).outerRadius(270);
+        const arcTween = function (d) {
+            var init_startAngle = 0;
+            var init_endAngle = 0;
+            var interpolate_start = d3.interpolate(init_startAngle, d.startAngle);
+            var interpolate_end = d3.interpolate(init_endAngle, d.endAngle);
+            return function (t) {
+                d.startAngle = interpolate_start(t);
+                d.endAngle = interpolate_end(t);
+                return arcGenerator(d)
+            }
+        };
 
-        d3.csv('data/liaoning.csv').then(data => {
-            const pie = d3.pie().value(d => d.population);
-            const arcData = pie(data);
-            const path = d3.arc().innerRadius(60).outerRadius(260);
-            const color = d3.scaleOrdinal()
-                .domain(data.map(d => d.city))
-                .range(d3.schemeSet2.concat(d3.schemeSet3));
+        function render_pie(number) {
+            var year = `year_${number}`;
+            d3.json('data/pie.json').then(data => {
+                if (year == 'year_2014') { data_specific = data.year_2014; }
+                if (year == 'year_2015') { data_specific = data.year_2015; }
+                if (year == 'year_2016') { data_specific = data.year_2016; }
+                if (year == 'year_2017') { data_specific = data.year_2017; }
+                if (year == 'year_2018') { data_specific = data.year_2018; }
+                if (year == 'year_2019') { data_specific = data.year_2019; }
+                if (year == 'year_2020') { data_specific = data.year_2020; }
+                if (year == 'year_2021') { data_specific = data.year_2021; }
+                if (year == 'year_2022') { data_specific = data.year_2022; }
+                const pie = d3.pie().value(d => d.number);
+                const arcData = pie(data_specific);
+                const color = d3.scaleOrdinal()
+                    .domain(data_specific.map(d => d.type))
+                    .range(d3.schemeSet1.concat(d3.schemeSet2.concat(d3.schemeSet3)));
 
-            svg.selectAll('path').data(arcData).join('path')
-                .attr('d', path)
-                .attr('transform', `translate(${width / 2}, ${height / 2})`)
-                .attr('fill', d => color(d.data.city));
+                svg.selectAll('path').data(arcData).join('path')
+                    .attr('transform', `translate(${width / 2 - 5}, ${height / 2 + 60})`)
+                    .attr('fill', d => color(d.data.type))
+                    .on('mouseover', (event, d) => {
+                        d3.select(event.currentTarget).attr('opacity', '0.5');
+                        tip.show(event, d);
+                        d3.select('.d3-tip')
+                            .style('top', `${event.y - tipele.offsetHeight - 30}px`)
+                            .style('left', `${event.x - tipele.offsetWidth / 2}px`);
+                    })
+                    .on('mouseout', (event, d) => {
+                        d3.select(event.currentTarget).attr('opacity', '1.0');
+                        tip.hide(event, d);
+                    })
+                    .transition().duration(1000).attrTween('d', arcTween);
 
-            const arcOuter = d3.arc().innerRadius(280).outerRadius(280);
-            svg.append('g').attr('transform', `translate(${width / 2}, ${height / 2})`)
-                .selectAll('text').data(arcData).join('text')
-                .attr('transform', d => `translate(${arcOuter.centroid(d)})`)
-                .attr('text-anchor', 'middle')
-                .attr('style', 'fill: white')
-                .text(d => d.data.city);
-        });
+                // remove previous legend
+                svg.selectAll(".legend").remove();
+
+                var legend = svg.selectAll(".legend")
+                    .data(Array.from(new Set(data_specific.map(d => d.type)))).join('g')
+                    .attr("class", "legend")
+                    .attr("transform", (d, i) => `translate(${(60)},${(60 + i * 30)})`);
+
+                // draw legend colored rectangles
+                legend.append("rect")
+                    .attr("x", 0)
+                    .attr("y", -3)
+                    .attr("width", 20)
+                    .attr("height", 20)
+                    .style("fill", d => color(d));
+
+                // draw legend text
+                legend.append("text")
+                    .attr("x", 30)
+                    .attr("y", 13)
+                    .attr("dy", "-0.1em")
+                    .attr("text-anchor", "start")
+                    .attr("font-size", "1.0em")
+                    .style("fill", "white")
+                    .text(d => d);
+            });
+        }
+
+        d3.selectAll("#test")
+            .on("change", function () {
+                var mySelect = document.single.test.value;
+                render_pie(mySelect);
+            });
+
+        render_pie("2014");
+
     </script>
     <div class="wrapper">
         <ul class="menu">

@@ -1,0 +1,412 @@
+{
+    "year_2014": [
+        {
+            "type": "爆炸",
+            "number": 7
+        },
+        {
+            "type": "交通事故",
+            "number": 3
+        },
+        {
+            "type": "结构事故",
+            "number": 19
+        },
+        {
+            "type": "其他",
+            "number": 3
+        },
+        {
+            "type": "气体或化学品泄漏",
+            "number": 2
+        },
+        {
+            "type": "水浸",
+            "number": 1
+        }
+    ],
+    "year_2015": [
+        {
+            "type": "火灾",
+            "number": 31
+        },
+        {
+            "type": "结构事故",
+            "number": 165
+        },
+        {
+            "type": "其他",
+            "number": 130
+        },
+        {
+            "type": "交通事故",
+            "number": 71
+        },
+        {
+            "type": "气体或化学品泄漏",
+            "number": 59
+        },
+        {
+            "type": "爆炸",
+            "number": 75
+        },
+        {
+            "type": "水浸",
+            "number": 14
+        },
+        {
+            "type": "高处坠落",
+            "number": 17
+        },
+        {
+            "type": "机械事故",
+            "number": 12
+        },
+        {
+            "type": "溺水",
+            "number": 1
+        },
+        {
+            "type": "过劳死",
+            "number": 1
+        },
+        {
+            "type": "触电",
+            "number": 8
+        }
+    ],
+    "year_2016": [
+        {
+            "type": "交通事故",
+            "number": 76
+        },
+        {
+            "type": "其他",
+            "number": 125
+        },
+        {
+            "type": "结构事故",
+            "number": 142
+        },
+        {
+            "type": "水浸",
+            "number": 17
+        },
+        {
+            "type": "高处坠落",
+            "number": 4
+        },
+        {
+            "type": "气体或化学品泄漏",
+            "number": 42
+        },
+        {
+            "type": "溺水",
+            "number": 4
+        },
+        {
+            "type": "爆炸",
+            "number": 65
+        },
+        {
+            "type": "火灾",
+            "number": 17
+        },
+        {
+            "type": "机械事故",
+            "number": 9
+        },
+        {
+            "type": "触电",
+            "number": 19
+        }
+    ],
+    "year_2017": [
+        {
+            "type": "交通事故",
+            "number": 67
+        },
+        {
+            "type": "火灾",
+            "number": 30
+        },
+        {
+            "type": "爆炸",
+            "number": 42
+        },
+        {
+            "type": "结构事故",
+            "number": 121
+        },
+        {
+            "type": "气体或化学品泄漏",
+            "number": 43
+        },
+        {
+            "type": "其他",
+            "number": 79
+        },
+        {
+            "type": "溺水",
+            "number": 6
+        },
+        {
+            "type": "触电",
+            "number": 20
+        },
+        {
+            "type": "高处坠落",
+            "number": 4
+        },
+        {
+            "type": "水浸",
+            "number": 8
+        },
+        {
+            "type": "机械事故",
+            "number": 8
+        }
+    ],
+    "year_2018": [
+        {
+            "type": "结构事故",
+            "number": 154
+        },
+        {
+            "type": "爆炸",
+            "number": 48
+        },
+        {
+            "type": "其他",
+            "number": 44
+        },
+        {
+            "type": "火灾",
+            "number": 18
+        },
+        {
+            "type": "交通事故",
+            "number": 162
+        },
+        {
+            "type": "触电",
+            "number": 15
+        },
+        {
+            "type": "机械事故",
+            "number": 12
+        },
+        {
+            "type": "气体或化学品泄漏",
+            "number": 42
+        },
+        {
+            "type": "高处坠落",
+            "number": 43
+        },
+        {
+            "type": "水浸",
+            "number": 8
+        },
+        {
+            "type": "溺水",
+            "number": 2
+        }
+    ],
+    "year_2019": [
+        {
+            "type": "交通事故",
+            "number": 177
+        },
+        {
+            "type": "触电",
+            "number": 12
+        },
+        {
+            "type": "其他",
+            "number": 39
+        },
+        {
+            "type": "结构事故",
+            "number": 218
+        },
+        {
+            "type": "火灾",
+            "number": 42
+        },
+        {
+            "type": "气体或化学品泄漏",
+            "number": 42
+        },
+        {
+            "type": "高处坠落",
+            "number": 33
+        },
+        {
+            "type": "爆炸",
+            "number": 56
+        },
+        {
+            "type": "机械事故",
+            "number": 20
+        },
+        {
+            "type": "水浸",
+            "number": 9
+        },
+        {
+            "type": "溺水",
+            "number": 1
+        },
+        {
+            "type": "过劳死",
+            "number": 1
+        }
+    ],
+    "year_2020": [
+        {
+            "type": "爆炸",
+            "number": 80
+        },
+        {
+            "type": "结构事故",
+            "number": 99
+        },
+        {
+            "type": "交通事故",
+            "number": 32
+        },
+        {
+            "type": "机械事故",
+            "number": 46
+        },
+        {
+            "type": "高处坠落",
+            "number": 117
+        },
+        {
+            "type": "火灾",
+            "number": 112
+        },
+        {
+            "type": "其他",
+            "number": 21
+        },
+        {
+            "type": "溺水",
+            "number": 8
+        },
+        {
+            "type": "气体或化学品泄漏",
+            "number": 38
+        },
+        {
+            "type": "水浸",
+            "number": 5
+        },
+        {
+            "type": "触电",
+            "number": 10
+        },
+        {
+            "type": "过劳死",
+            "number": 6
+        }
+    ],
+    "year_2021": [
+        {
+            "type": "机械事故",
+            "number": 70
+        },
+        {
+            "type": "其他",
+            "number": 18
+        },
+        {
+            "type": "火灾",
+            "number": 104
+        },
+        {
+            "type": "高处坠落",
+            "number": 78
+        },
+        {
+            "type": "爆炸",
+            "number": 70
+        },
+        {
+            "type": "结构事故",
+            "number": 99
+        },
+        {
+            "type": "气体或化学品泄漏",
+            "number": 45
+        },
+        {
+            "type": "溺水",
+            "number": 10
+        },
+        {
+            "type": "交通事故",
+            "number": 26
+        },
+        {
+            "type": "水浸",
+            "number": 10
+        },
+        {
+            "type": "触电",
+            "number": 6
+        },
+        {
+            "type": "过劳死",
+            "number": 3
+        }
+    ],
+    "year_2022": [
+        {
+            "type": "交通事故",
+            "number": 74
+        },
+        {
+            "type": "火灾",
+            "number": 91
+        },
+        {
+            "type": "结构事故",
+            "number": 52
+        },
+        {
+            "type": "爆炸",
+            "number": 39
+        },
+        {
+            "type": "机械事故",
+            "number": 56
+        },
+        {
+            "type": "高处坠落",
+            "number": 18
+        },
+        {
+            "type": "其他",
+            "number": 165
+        },
+        {
+            "type": "过劳死",
+            "number": 16
+        },
+        {
+            "type": "气体或化学品泄漏",
+            "number": 20
+        },
+        {
+            "type": "溺水",
+            "number": 9
+        },
+        {
+            "type": "触电",
+            "number": 3
+        }
+    ]
+}
