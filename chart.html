@@ -44,7 +44,7 @@
     <div class="fixed-title">
         统计图表展示
     </div>
-    <div style="position:absolute;top:200px;left:1150px;color:white;font-size:30px;">
+    <div style="position:absolute;top:200px;left:1150px;color:rgb(1, 246, 226);font-size:30px;">
         年份选择：
     </div>
     <form name="single" action="" method="" style="position:absolute;top:190px;left:1300px;">
@@ -65,7 +65,7 @@
         const svg = d3.select('svg');
         const width = svg.attr('width');
         const height = svg.attr('height');
-        const tip = d3.tip().html((event, d) => `${d.data.type}: 遇难${d.data.number}人`);
+        const tip = d3.tip().html((event, d) => `${d.data.type}: 共发生${d.data.number}起`);
         svg.call(tip);
         tip.attr('class', 'd3-tip');
         const tipele = document.getElementsByClassName('d3-tip')[0];
@@ -153,6 +153,11 @@
         render_pie("2014");
 
     </script>
+    <div>
+        <a href="stack.html">
+            <img src="pic/continue.png" width="100" height="100" style="position:absolute;left:1350px;top:700px" />
+        </a>
+    </div>
     <div class="wrapper">
         <ul class="menu">
             <li><a href="main.html">首页</a></li>

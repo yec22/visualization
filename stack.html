@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>统计图表</title>
+    <script src="d3/d3.min.js"></script>
+    <script src="d3/d3-v6-tip.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/d3-tip.css">
+</head>
+
+<style>
+    /* set the CSS */
+    .axisWhite line {
+        stroke: white;
+    }
+
+    .axisWhite path {
+        stroke: white;
+    }
+
+    .axisWhite text {
+        fill: white;
+    }
+</style>
+
+<body style="background-color:black;width:1600;height:1000;">
+    <input type="checkbox" id="menu_btn">
+    <label class="menu-btn" for="menu_btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </label>
+    <style>
+        .fixed-title {
+            position: absolute;
+            top: 40px;
+            left: 550px;
+            color: white;
+            font-size: 70px;
+        }
+    </style>
+    <div class="fixed-title">
+        统计图表展示
+    </div>
+    <div style="position:absolute;top:100px;left:1300px;color:rgb(1, 246, 226);font-size:30px;">
+        展示内容：
+    </div>
+    <form name="single" action="" method="" style="position:absolute;top:150px;left:1300px;">
+        <select id="test" name="test" style="height:40px;width:120px;font-size:20px;border-radius:10px">
+            <option value="1">省份</option>
+            <option value="2">行业</option>
+            <option value="3">事故类型</option>
+        </select>
+    </form>
+    <svg width="1400" height="800" id="mainsvg" class="svgs" style='display: block; margin: 0 auto;'></svg>
+    <script>
+        const svg = d3.select('#mainsvg');
+        const width = +svg.attr('width');
+        const height = +svg.attr('height');
+        const margin = { top: 120, right: 200, bottom: 100, left: 200 };
+        const innerWidth = width - margin.left - margin.right;
+        const innerHeight = height - margin.top - margin.bottom;
+        const g = svg.append('g').attr('id', 'maingroup')
+            .attr('transform', `translate(${margin.left + 30}, ${margin.top + 40})`);
+
+        function render_stack(value) {
+            d3.json('data/stack.json').then(data => {
+                if (value == 1) {
+                    naiveData = data.province;
+                    legend = '省份';
+                }
+                if (value == 2) {
+                    naiveData = data.field;
+                    legend = '行业';
+                }
+                if (value == 3) {
+                    naiveData = data.type;
+                    legend = '事故';
+                }
+
+                var naiveKeys = ["year_2014", "year_2015", "year_2016",
+                    "year_2017", "year_2018", "year_2019",
+                    "year_2020", "year_2021", "year_2022"];
+
+                var naiveStack = d3.stack()
+                    .keys(naiveKeys)
+                    .order(d3.stackOrderNone)(naiveData);
+
+                const xValue = d => d.name;
+
+                const yScale = d3.scaleLinear()
+                    .domain([0, d3.max(naiveStack, d => d3.max(d, subd => subd[1]))])
+                    .range([innerHeight, 0]).nice();
+
+                const xScale = d3.scaleBand()
+                    .domain(naiveData.map(d => xValue(d)))
+                    .range([0, innerWidth])
+                    .padding(0.5);
+
+                const color = d3.scaleOrdinal()
+                    .domain(naiveKeys)
+                    .range(d3.schemeSet1.concat(d3.schemeSet2.concat(d3.schemeSet3)));
+
+
+                // remove previous
+                g.selectAll(".datagroup").remove();
+                // start to do data-join; 
+                g.selectAll('.datagroup').data(naiveStack).join('g')
+                    .attr('class', 'datagroup')
+                    .attr('fill', d => color(d.key))
+                    .selectAll('.datarect').data(d => d).join('rect')
+                    .attr('class', 'datarect')
+                    .attr('y', d => yScale(d[1]))
+                    .attr('x', d => xScale(xValue(d.data)))
+                    .attr('width', xScale.bandwidth())
+                    .transition().duration(1000)
+                    .attr('height', d => yScale(d[0]) - yScale(d[1]));
+
+                // remove previous
+                g.selectAll("#xaxis").remove();
+                g.selectAll("#yaxis").remove();
+                g.selectAll("#xlegend").remove();
+                g.selectAll("#ylegend").remove();
+                // drawing axes;
+                let yAxis = d3.axisLeft(yScale);
+                let xAxis = d3.axisBottom(xScale);
+                g.append('g').attr('class', 'axisWhite').attr('id', 'yaxis').call(yAxis);
+                g.append('g').attr('class', 'axisWhite').attr('id', 'xaxis').call(xAxis).attr('transform', `translate(0, ${innerHeight})`);
+                d3.selectAll('.tick text').attr('font-size', '2em');
+                d3.selectAll('#xaxis text').attr('y', '10');
+
+                g.append('text').attr('id', 'xlegend').attr('transform', `translate(${innerWidth - 30}, ${innerHeight + 25})`)
+                    .attr('font-size', '1em').style('fill', 'white').text(`（${legend}）`);
+
+                g.append('text').attr('id', 'ylegend').attr('transform', `translate(${-60}, ${-35})`)
+                    .attr('font-size', '1em').style('fill', 'white').text('（次数）');
+
+            });
+        }
+
+        d3.selectAll("#test")
+            .on("change", function () {
+                var mySelect = document.single.test.value;
+                render_stack(mySelect);
+            });
+
+        render_stack("1");
+
+    </script>
+    <div>
+        <a href="chart.html">
+            <img src="pic/return.png" width="100" height="100" style="position:absolute;left:50px;top:700px" />
+        </a>
+    </div>
+    <div class="wrapper">
+        <ul class="menu">
+            <li><a href="main.html">首页</a></li>
+            <li><a href="intro.html">背景介绍</a></li>
+            <li><a href="map.html">地图可视化</a></li>
+            <li><a href="#">词云</a></li>
+            <li><a href="chart.html">统计图表</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
