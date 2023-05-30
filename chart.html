@@ -44,11 +44,11 @@
     <div class="fixed-title">
         统计图表展示
     </div>
-    <div style="position:absolute;top:200px;left:1150px;color:rgb(1, 246, 226);font-size:30px;">
+    <div style="position:absolute;top:200px;left:1100px;color:rgb(1, 246, 226);font-size:25px;">
         年份选择：
     </div>
-    <form name="single" action="" method="" style="position:absolute;top:190px;left:1300px;">
-        <select id="test" name="test" style="height:60px;width:90px;font-size:20px;border-radius:20px">
+    <form name="single" action="" method="" style="position:absolute;top:190px;left:1250px;">
+        <select id="test" name="test" style="height:50px;width:120px;font-size:20px;border-radius:10px">
             <option value="2014">2014年</option>
             <option value="2015">2015年</option>
             <option value="2016">2016年</option>
@@ -58,6 +58,16 @@
             <option value="2020">2020年</option>
             <option value="2021">2021年</option>
             <option value="2022">2022年</option>
+        </select>
+    </form>
+    <div style="position:absolute;top:300px;left:1100px;color:rgb(1, 246, 226);font-size:25px;">
+        种类选择：
+    </div>
+    <form name="single2" action="" method="" style="position:absolute;top:290px;left:1250px;">
+        <select id="test2" name="test2" style="height:50px;width:120px;font-size:20px;border-radius:10px">
+            <option value="1">事故种类</option>
+            <option value="2">省份</option>
+            <option value="3">行业</option>
         </select>
     </form>
     <svg width="1400" height="800" id="mainsvg" class="svgs" style='display: block; margin: 0 auto;'></svg>
@@ -81,10 +91,15 @@
                 return arcGenerator(d)
             }
         };
+        var choice = 1;
+        var mySelect = 2014;
 
         function render_pie(number) {
             var year = `year_${number}`;
-            d3.json('data/pie.json').then(data => {
+            if (choice == 1) { file = 'data/pie.json'; }
+            if (choice == 2) { file = 'data/pie_prov.json'; }
+            if (choice == 3) { file = 'data/pie_field.json'; }
+            d3.json(file).then(data => {
                 if (year == 'year_2014') { data_specific = data.year_2014; }
                 if (year == 'year_2015') { data_specific = data.year_2015; }
                 if (year == 'year_2016') { data_specific = data.year_2016; }
@@ -146,11 +161,17 @@
 
         d3.selectAll("#test")
             .on("change", function () {
-                var mySelect = document.single.test.value;
+                mySelect = document.single.test.value;
                 render_pie(mySelect);
             });
 
-        render_pie("2014");
+        d3.selectAll("#test2")
+            .on("change", function () {
+                choice = document.single2.test2.value;
+                render_pie(mySelect);
+            });
+
+        render_pie(2014);
 
     </script>
     <div>

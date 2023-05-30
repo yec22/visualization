@@ -1,0 +1,392 @@
+{
+    "year_2014": [
+        {
+            "type": "重工业",
+            "number": 4
+        },
+        {
+            "type": "其他",
+            "number": 2
+        },
+        {
+            "type": "建筑业",
+            "number": 17
+        },
+        {
+            "type": "环卫行业",
+            "number": 2
+        },
+        {
+            "type": "煤炭工业",
+            "number": 7
+        },
+        {
+            "type": "制造业",
+            "number": 2
+        },
+        {
+            "type": "维修养护业",
+            "number": 1
+        }
+    ],
+    "year_2015": [
+        {
+            "type": "未知",
+            "number": 76
+        },
+        {
+            "type": "建筑业",
+            "number": 202
+        },
+        {
+            "type": "环卫行业",
+            "number": 55
+        },
+        {
+            "type": "其他采矿工业",
+            "number": 33
+        },
+        {
+            "type": "重工业",
+            "number": 46
+        },
+        {
+            "type": "制造业",
+            "number": 66
+        },
+        {
+            "type": "煤炭工业",
+            "number": 45
+        },
+        {
+            "type": "维修养护业",
+            "number": 37
+        },
+        {
+            "type": "其他",
+            "number": 9
+        },
+        {
+            "type": "仓储/物流业",
+            "number": 14
+        },
+        {
+            "type": "医疗业",
+            "number": 1
+        }
+    ],
+    "year_2016": [
+        {
+            "type": "环卫行业",
+            "number": 72
+        },
+        {
+            "type": "建筑业",
+            "number": 193
+        },
+        {
+            "type": "仓储/物流业",
+            "number": 14
+        },
+        {
+            "type": "煤炭工业",
+            "number": 45
+        },
+        {
+            "type": "重工业",
+            "number": 23
+        },
+        {
+            "type": "其他",
+            "number": 4
+        },
+        {
+            "type": "未知",
+            "number": 41
+        },
+        {
+            "type": "制造业",
+            "number": 58
+        },
+        {
+            "type": "维修养护业",
+            "number": 53
+        },
+        {
+            "type": "其他采矿工业",
+            "number": 17
+        }
+    ],
+    "year_2017": [
+        {
+            "type": "环卫行业",
+            "number": 52
+        },
+        {
+            "type": "制造业",
+            "number": 46
+        },
+        {
+            "type": "煤炭工业",
+            "number": 61
+        },
+        {
+            "type": "其他采矿工业",
+            "number": 17
+        },
+        {
+            "type": "仓储/物流业",
+            "number": 12
+        },
+        {
+            "type": "建筑业",
+            "number": 144
+        },
+        {
+            "type": "未知",
+            "number": 19
+        },
+        {
+            "type": "其他",
+            "number": 5
+        },
+        {
+            "type": "重工业",
+            "number": 22
+        },
+        {
+            "type": "维修养护业",
+            "number": 49
+        },
+        {
+            "type": "医疗业",
+            "number": 1
+        }
+    ],
+    "year_2018": [
+        {
+            "type": "仓储/物流业",
+            "number": 79
+        },
+        {
+            "type": "制造业",
+            "number": 43
+        },
+        {
+            "type": "未知",
+            "number": 15
+        },
+        {
+            "type": "建筑业",
+            "number": 142
+        },
+        {
+            "type": "其他采矿工业",
+            "number": 5
+        },
+        {
+            "type": "环卫行业",
+            "number": 93
+        },
+        {
+            "type": "煤炭工业",
+            "number": 79
+        },
+        {
+            "type": "维修养护业",
+            "number": 63
+        },
+        {
+            "type": "重工业",
+            "number": 22
+        },
+        {
+            "type": "医疗业",
+            "number": 4
+        },
+        {
+            "type": "其他",
+            "number": 3
+        }
+    ],
+    "year_2019": [
+        {
+            "type": "煤炭工业",
+            "number": 92
+        },
+        {
+            "type": "环卫行业",
+            "number": 76
+        },
+        {
+            "type": "维修养护业",
+            "number": 53
+        },
+        {
+            "type": "建筑业",
+            "number": 209
+        },
+        {
+            "type": "仓储/物流业",
+            "number": 101
+        },
+        {
+            "type": "重工业",
+            "number": 47
+        },
+        {
+            "type": "其他采矿工业",
+            "number": 6
+        },
+        {
+            "type": "制造业",
+            "number": 43
+        },
+        {
+            "type": "其他",
+            "number": 5
+        },
+        {
+            "type": "未知",
+            "number": 18
+        }
+    ],
+    "year_2020": [
+        {
+            "type": "仓储/物流业",
+            "number": 58
+        },
+        {
+            "type": "建筑业",
+            "number": 197
+        },
+        {
+            "type": "制造业",
+            "number": 65
+        },
+        {
+            "type": "重工业",
+            "number": 83
+        },
+        {
+            "type": "维修养护业",
+            "number": 36
+        },
+        {
+            "type": "环卫行业",
+            "number": 6
+        },
+        {
+            "type": "其他",
+            "number": 55
+        },
+        {
+            "type": "煤炭工业",
+            "number": 66
+        },
+        {
+            "type": "其他采矿工业",
+            "number": 8
+        }
+    ],
+    "year_2021": [
+        {
+            "type": "重工业",
+            "number": 71
+        },
+        {
+            "type": "仓储/物流业",
+            "number": 78
+        },
+        {
+            "type": "建筑业",
+            "number": 172
+        },
+        {
+            "type": "制造业",
+            "number": 44
+        },
+        {
+            "type": "其他",
+            "number": 59
+        },
+        {
+            "type": "环卫行业",
+            "number": 4
+        },
+        {
+            "type": "煤炭工业",
+            "number": 66
+        },
+        {
+            "type": "其他采矿工业",
+            "number": 4
+        },
+        {
+            "type": "维修养护业",
+            "number": 39
+        },
+        {
+            "type": "医疗业",
+            "number": 2
+        }
+    ],
+    "year_2022": [
+        {
+            "type": "仓储/物流业",
+            "number": 137
+        },
+        {
+            "type": "其他",
+            "number": 78
+        },
+        {
+            "type": "建筑业",
+            "number": 107
+        },
+        {
+            "type": "重工业",
+            "number": 59
+        },
+        {
+            "type": "制造业",
+            "number": 19
+        },
+        {
+            "type": "煤炭工业",
+            "number": 81
+        },
+        {
+            "type": "维修养护业",
+            "number": 9
+        },
+        {
+            "type": "医疗业",
+            "number": 32
+        },
+        {
+            "type": "环卫行业",
+            "number": 6
+        },
+        {
+            "type": "其他采矿工业",
+            "number": 6
+        },
+        {
+            "type": "能源业",
+            "number": 5
+        },
+        {
+            "type": "渔业",
+            "number": 2
+        },
+        {
+            "type": "互联网科技行业",
+            "number": 1
+        },
+        {
+            "type": "消防业",
+            "number": 1
+        }
+    ]
+}

@@ -1,0 +1,1056 @@
+{
+    "year_2014": [
+        {
+            "type": "四川省",
+            "number": 2
+        },
+        {
+            "type": "山西省",
+            "number": 1
+        },
+        {
+            "type": "福建省",
+            "number": 5
+        },
+        {
+            "type": "河北省",
+            "number": 1
+        },
+        {
+            "type": "湖南省",
+            "number": 1
+        },
+        {
+            "type": "山东省",
+            "number": 3
+        },
+        {
+            "type": "湖北省",
+            "number": 1
+        },
+        {
+            "type": "青海省",
+            "number": 1
+        },
+        {
+            "type": "河南省",
+            "number": 2
+        },
+        {
+            "type": "陕西省",
+            "number": 3
+        },
+        {
+            "type": "江苏省",
+            "number": 2
+        },
+        {
+            "type": "北京市",
+            "number": 3
+        },
+        {
+            "type": "黑龙江省",
+            "number": 2
+        },
+        {
+            "type": "安徽省",
+            "number": 2
+        },
+        {
+            "type": "浙江省",
+            "number": 1
+        },
+        {
+            "type": "江西省",
+            "number": 2
+        },
+        {
+            "type": "广东省",
+            "number": 3
+        }
+    ],
+    "year_2015": [
+        {
+            "type": "黑龙江省",
+            "number": 20
+        },
+        {
+            "type": "湖南省",
+            "number": 17
+        },
+        {
+            "type": "海南省",
+            "number": 9
+        },
+        {
+            "type": "江苏省",
+            "number": 33
+        },
+        {
+            "type": "甘肃省",
+            "number": 26
+        },
+        {
+            "type": "广东省",
+            "number": 51
+        },
+        {
+            "type": "河南省",
+            "number": 19
+        },
+        {
+            "type": "湖北省",
+            "number": 30
+        },
+        {
+            "type": "福建省",
+            "number": 48
+        },
+        {
+            "type": "四川省",
+            "number": 22
+        },
+        {
+            "type": "云南省",
+            "number": 16
+        },
+        {
+            "type": "安徽省",
+            "number": 29
+        },
+        {
+            "type": "广西壮族自治区",
+            "number": 17
+        },
+        {
+            "type": "浙江省",
+            "number": 32
+        },
+        {
+            "type": "吉林省",
+            "number": 8
+        },
+        {
+            "type": "重庆市",
+            "number": 10
+        },
+        {
+            "type": "辽宁省",
+            "number": 25
+        },
+        {
+            "type": "江西省",
+            "number": 13
+        },
+        {
+            "type": "山东省",
+            "number": 50
+        },
+        {
+            "type": "陕西省",
+            "number": 23
+        },
+        {
+            "type": "贵州省",
+            "number": 8
+        },
+        {
+            "type": "新疆维吾尔自治区",
+            "number": 4
+        },
+        {
+            "type": "内蒙古自治区",
+            "number": 11
+        },
+        {
+            "type": "上海市",
+            "number": 15
+        },
+        {
+            "type": "北京市",
+            "number": 13
+        },
+        {
+            "type": "青海省",
+            "number": 2
+        },
+        {
+            "type": "天津市",
+            "number": 5
+        },
+        {
+            "type": "山西省",
+            "number": 9
+        },
+        {
+            "type": "河北省",
+            "number": 15
+        },
+        {
+            "type": "宁夏回族自治区",
+            "number": 4
+        }
+    ],
+    "year_2016": [
+        {
+            "type": "安徽省",
+            "number": 21
+        },
+        {
+            "type": "上海市",
+            "number": 14
+        },
+        {
+            "type": "山东省",
+            "number": 59
+        },
+        {
+            "type": "黑龙江省",
+            "number": 15
+        },
+        {
+            "type": "福建省",
+            "number": 38
+        },
+        {
+            "type": "陕西省",
+            "number": 31
+        },
+        {
+            "type": "四川省",
+            "number": 30
+        },
+        {
+            "type": "广西壮族自治区",
+            "number": 8
+        },
+        {
+            "type": "浙江省",
+            "number": 25
+        },
+        {
+            "type": "贵州省",
+            "number": 20
+        },
+        {
+            "type": "河南省",
+            "number": 24
+        },
+        {
+            "type": "湖北省",
+            "number": 25
+        },
+        {
+            "type": "重庆市",
+            "number": 9
+        },
+        {
+            "type": "内蒙古自治区",
+            "number": 8
+        },
+        {
+            "type": "江西省",
+            "number": 12
+        },
+        {
+            "type": "广东省",
+            "number": 38
+        },
+        {
+            "type": "海南省",
+            "number": 6
+        },
+        {
+            "type": "辽宁省",
+            "number": 17
+        },
+        {
+            "type": "河北省",
+            "number": 13
+        },
+        {
+            "type": "江苏省",
+            "number": 31
+        },
+        {
+            "type": "湖南省",
+            "number": 10
+        },
+        {
+            "type": "甘肃省",
+            "number": 18
+        },
+        {
+            "type": "宁夏回族自治区",
+            "number": 3
+        },
+        {
+            "type": "吉林省",
+            "number": 4
+        },
+        {
+            "type": "云南省",
+            "number": 11
+        },
+        {
+            "type": "北京市",
+            "number": 6
+        },
+        {
+            "type": "山西省",
+            "number": 11
+        },
+        {
+            "type": "新疆维吾尔自治区",
+            "number": 5
+        },
+        {
+            "type": "青海省",
+            "number": 6
+        },
+        {
+            "type": "西藏自治区",
+            "number": 1
+        },
+        {
+            "type": "天津市",
+            "number": 1
+        }
+    ],
+    "year_2017": [
+        {
+            "type": "黑龙江省",
+            "number": 12
+        },
+        {
+            "type": "安徽省",
+            "number": 29
+        },
+        {
+            "type": "内蒙古自治区",
+            "number": 8
+        },
+        {
+            "type": "山东省",
+            "number": 45
+        },
+        {
+            "type": "河南省",
+            "number": 12
+        },
+        {
+            "type": "江苏省",
+            "number": 27
+        },
+        {
+            "type": "广东省",
+            "number": 30
+        },
+        {
+            "type": "福建省",
+            "number": 21
+        },
+        {
+            "type": "陕西省",
+            "number": 40
+        },
+        {
+            "type": "云南省",
+            "number": 13
+        },
+        {
+            "type": "甘肃省",
+            "number": 6
+        },
+        {
+            "type": "四川省",
+            "number": 17
+        },
+        {
+            "type": "山西省",
+            "number": 14
+        },
+        {
+            "type": "湖南省",
+            "number": 21
+        },
+        {
+            "type": "上海市",
+            "number": 12
+        },
+        {
+            "type": "广西壮族自治区",
+            "number": 14
+        },
+        {
+            "type": "重庆市",
+            "number": 8
+        },
+        {
+            "type": "新疆维吾尔自治区",
+            "number": 2
+        },
+        {
+            "type": "浙江省",
+            "number": 16
+        },
+        {
+            "type": "辽宁省",
+            "number": 13
+        },
+        {
+            "type": "湖北省",
+            "number": 12
+        },
+        {
+            "type": "江西省",
+            "number": 10
+        },
+        {
+            "type": "贵州省",
+            "number": 9
+        },
+        {
+            "type": "海南省",
+            "number": 7
+        },
+        {
+            "type": "河北省",
+            "number": 15
+        },
+        {
+            "type": "青海省",
+            "number": 3
+        },
+        {
+            "type": "天津市",
+            "number": 3
+        },
+        {
+            "type": "吉林省",
+            "number": 3
+        },
+        {
+            "type": "北京市",
+            "number": 3
+        },
+        {
+            "type": "宁夏回族自治区",
+            "number": 2
+        },
+        {
+            "type": "西藏自治区",
+            "number": 1
+        }
+    ],
+    "year_2018": [
+        {
+            "type": "河北省",
+            "number": 25
+        },
+        {
+            "type": "河南省",
+            "number": 38
+        },
+        {
+            "type": "上海市",
+            "number": 17
+        },
+        {
+            "type": "广东省",
+            "number": 34
+        },
+        {
+            "type": "安徽省",
+            "number": 28
+        },
+        {
+            "type": "江西省",
+            "number": 9
+        },
+        {
+            "type": "吉林省",
+            "number": 11
+        },
+        {
+            "type": "甘肃省",
+            "number": 10
+        },
+        {
+            "type": "陕西省",
+            "number": 28
+        },
+        {
+            "type": "浙江省",
+            "number": 26
+        },
+        {
+            "type": "湖北省",
+            "number": 18
+        },
+        {
+            "type": "四川省",
+            "number": 30
+        },
+        {
+            "type": "湖南省",
+            "number": 21
+        },
+        {
+            "type": "宁夏回族自治区",
+            "number": 5
+        },
+        {
+            "type": "海南省",
+            "number": 11
+        },
+        {
+            "type": "天津市",
+            "number": 4
+        },
+        {
+            "type": "内蒙古自治区",
+            "number": 11
+        },
+        {
+            "type": "山东省",
+            "number": 35
+        },
+        {
+            "type": "广西壮族自治区",
+            "number": 22
+        },
+        {
+            "type": "云南省",
+            "number": 13
+        },
+        {
+            "type": "辽宁省",
+            "number": 17
+        },
+        {
+            "type": "福建省",
+            "number": 21
+        },
+        {
+            "type": "重庆市",
+            "number": 14
+        },
+        {
+            "type": "黑龙江省",
+            "number": 8
+        },
+        {
+            "type": "江苏省",
+            "number": 49
+        },
+        {
+            "type": "山西省",
+            "number": 18
+        },
+        {
+            "type": "北京市",
+            "number": 5
+        },
+        {
+            "type": "新疆维吾尔自治区",
+            "number": 7
+        },
+        {
+            "type": "贵州省",
+            "number": 12
+        },
+        {
+            "type": "西藏自治区",
+            "number": 1
+        }
+    ],
+    "year_2019": [
+        {
+            "type": "甘肃省",
+            "number": 13
+        },
+        {
+            "type": "广东省",
+            "number": 52
+        },
+        {
+            "type": "河北省",
+            "number": 24
+        },
+        {
+            "type": "湖北省",
+            "number": 10
+        },
+        {
+            "type": "天津市",
+            "number": 6
+        },
+        {
+            "type": "浙江省",
+            "number": 42
+        },
+        {
+            "type": "福建省",
+            "number": 22
+        },
+        {
+            "type": "湖南省",
+            "number": 19
+        },
+        {
+            "type": "江苏省",
+            "number": 55
+        },
+        {
+            "type": "陕西省",
+            "number": 39
+        },
+        {
+            "type": "山西省",
+            "number": 23
+        },
+        {
+            "type": "上海市",
+            "number": 16
+        },
+        {
+            "type": "四川省",
+            "number": 39
+        },
+        {
+            "type": "云南省",
+            "number": 17
+        },
+        {
+            "type": "辽宁省",
+            "number": 16
+        },
+        {
+            "type": "安徽省",
+            "number": 23
+        },
+        {
+            "type": "河南省",
+            "number": 31
+        },
+        {
+            "type": "吉林省",
+            "number": 10
+        },
+        {
+            "type": "海南省",
+            "number": 9
+        },
+        {
+            "type": "广西壮族自治区",
+            "number": 35
+        },
+        {
+            "type": "内蒙古自治区",
+            "number": 16
+        },
+        {
+            "type": "江西省",
+            "number": 19
+        },
+        {
+            "type": "黑龙江省",
+            "number": 13
+        },
+        {
+            "type": "青海省",
+            "number": 1
+        },
+        {
+            "type": "北京市",
+            "number": 10
+        },
+        {
+            "type": "贵州省",
+            "number": 23
+        },
+        {
+            "type": "山东省",
+            "number": 51
+        },
+        {
+            "type": "重庆市",
+            "number": 13
+        },
+        {
+            "type": "新疆维吾尔自治区",
+            "number": 1
+        },
+        {
+            "type": "宁夏回族自治区",
+            "number": 2
+        }
+    ],
+    "year_2020": [
+        {
+            "type": "黑龙江省",
+            "number": 13
+        },
+        {
+            "type": "广西壮族自治区",
+            "number": 26
+        },
+        {
+            "type": "湖北省",
+            "number": 17
+        },
+        {
+            "type": "江西省",
+            "number": 18
+        },
+        {
+            "type": "甘肃省",
+            "number": 10
+        },
+        {
+            "type": "四川省",
+            "number": 33
+        },
+        {
+            "type": "福建省",
+            "number": 23
+        },
+        {
+            "type": "江苏省",
+            "number": 29
+        },
+        {
+            "type": "广东省",
+            "number": 43
+        },
+        {
+            "type": "浙江省",
+            "number": 31
+        },
+        {
+            "type": "辽宁省",
+            "number": 12
+        },
+        {
+            "type": "北京市",
+            "number": 20
+        },
+        {
+            "type": "贵州省",
+            "number": 8
+        },
+        {
+            "type": "上海市",
+            "number": 17
+        },
+        {
+            "type": "重庆市",
+            "number": 10
+        },
+        {
+            "type": "河北省",
+            "number": 18
+        },
+        {
+            "type": "内蒙古自治区",
+            "number": 35
+        },
+        {
+            "type": "山东省",
+            "number": 30
+        },
+        {
+            "type": "湖南省",
+            "number": 18
+        },
+        {
+            "type": "陕西省",
+            "number": 23
+        },
+        {
+            "type": "吉林省",
+            "number": 10
+        },
+        {
+            "type": "云南省",
+            "number": 17
+        },
+        {
+            "type": "安徽省",
+            "number": 38
+        },
+        {
+            "type": "河南省",
+            "number": 29
+        },
+        {
+            "type": "宁夏回族自治区",
+            "number": 4
+        },
+        {
+            "type": "海南省",
+            "number": 4
+        },
+        {
+            "type": "新疆维吾尔自治区",
+            "number": 4
+        },
+        {
+            "type": "山西省",
+            "number": 24
+        },
+        {
+            "type": "天津市",
+            "number": 8
+        },
+        {
+            "type": "青海省",
+            "number": 2
+        }
+    ],
+    "year_2021": [
+        {
+            "type": "江苏省",
+            "number": 36
+        },
+        {
+            "type": "湖北省",
+            "number": 18
+        },
+        {
+            "type": "陕西省",
+            "number": 16
+        },
+        {
+            "type": "上海市",
+            "number": 11
+        },
+        {
+            "type": "四川省",
+            "number": 29
+        },
+        {
+            "type": "山东省",
+            "number": 23
+        },
+        {
+            "type": "江西省",
+            "number": 15
+        },
+        {
+            "type": "湖南省",
+            "number": 10
+        },
+        {
+            "type": "浙江省",
+            "number": 44
+        },
+        {
+            "type": "内蒙古自治区",
+            "number": 28
+        },
+        {
+            "type": "河南省",
+            "number": 24
+        },
+        {
+            "type": "天津市",
+            "number": 28
+        },
+        {
+            "type": "广东省",
+            "number": 42
+        },
+        {
+            "type": "贵州省",
+            "number": 14
+        },
+        {
+            "type": "福建省",
+            "number": 16
+        },
+        {
+            "type": "广西壮族自治区",
+            "number": 15
+        },
+        {
+            "type": "云南省",
+            "number": 15
+        },
+        {
+            "type": "北京市",
+            "number": 20
+        },
+        {
+            "type": "辽宁省",
+            "number": 31
+        },
+        {
+            "type": "吉林省",
+            "number": 9
+        },
+        {
+            "type": "安徽省",
+            "number": 17
+        },
+        {
+            "type": "重庆市",
+            "number": 10
+        },
+        {
+            "type": "山西省",
+            "number": 23
+        },
+        {
+            "type": "新疆维吾尔自治区",
+            "number": 2
+        },
+        {
+            "type": "海南省",
+            "number": 4
+        },
+        {
+            "type": "河北省",
+            "number": 16
+        },
+        {
+            "type": "甘肃省",
+            "number": 4
+        },
+        {
+            "type": "黑龙江省",
+            "number": 11
+        },
+        {
+            "type": "青海省",
+            "number": 4
+        },
+        {
+            "type": "宁夏回族自治区",
+            "number": 4
+        }
+    ],
+    "year_2022": [
+        {
+            "type": "四川省",
+            "number": 27
+        },
+        {
+            "type": "福建省",
+            "number": 16
+        },
+        {
+            "type": "贵州省",
+            "number": 18
+        },
+        {
+            "type": "湖南省",
+            "number": 23
+        },
+        {
+            "type": "山东省",
+            "number": 31
+        },
+        {
+            "type": "江西省",
+            "number": 12
+        },
+        {
+            "type": "上海市",
+            "number": 22
+        },
+        {
+            "type": "浙江省",
+            "number": 41
+        },
+        {
+            "type": "河南省",
+            "number": 18
+        },
+        {
+            "type": "云南省",
+            "number": 19
+        },
+        {
+            "type": "重庆市",
+            "number": 15
+        },
+        {
+            "type": "陕西省",
+            "number": 27
+        },
+        {
+            "type": "河北省",
+            "number": 22
+        },
+        {
+            "type": "安徽省",
+            "number": 22
+        },
+        {
+            "type": "内蒙古自治区",
+            "number": 18
+        },
+        {
+            "type": "黑龙江省",
+            "number": 7
+        },
+        {
+            "type": "江苏省",
+            "number": 26
+        },
+        {
+            "type": "广西壮族自治区",
+            "number": 13
+        },
+        {
+            "type": "北京市",
+            "number": 13
+        },
+        {
+            "type": "甘肃省",
+            "number": 6
+        },
+        {
+            "type": "湖北省",
+            "number": 16
+        },
+        {
+            "type": "宁夏回族自治区",
+            "number": 6
+        },
+        {
+            "type": "青海省",
+            "number": 4
+        },
+        {
+            "type": "辽宁省",
+            "number": 13
+        },
+        {
+            "type": "广东省",
+            "number": 35
+        },
+        {
+            "type": "山西省",
+            "number": 57
+        },
+        {
+            "type": "吉林省",
+            "number": 6
+        },
+        {
+            "type": "天津市",
+            "number": 5
+        },
+        {
+            "type": "海南省",
+            "number": 1
+        },
+        {
+            "type": "新疆维吾尔自治区",
+            "number": 4
+        }
+    ]
+}
