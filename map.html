@@ -20,7 +20,7 @@
     <label class="menu-btn" for="menu_btn">
         <i class="fa fa-bars" aria-hidden="true"></i>
     </label>
-    <svg width="1400" height="800" id="mainsvg" class="svgs" style='display: block; margin: 0 auto;'></svg>
+    <svg width="1600" height="1200" id="mainsvg" class="svgs" style='display: block; margin: 0 auto;'></svg>
     <script>
 
         let svg = d3.select('svg');
@@ -43,10 +43,10 @@
         let worldmeta;
         let lastid = undefined;
 
-        d3.json('data/countries-110m.json').then(
+        d3.json('data/china.json').then(
             function (data) {
                 // convert topo-json to geo-json; 
-                worldmeta = topojson.feature(data, data.objects.countries);
+                worldmeta = topojson.feature(data, data.objects.default);
 
                 // this code is really important if you want to fit your geoPaths (map) in your SVG element; 
                 projection.fitSize([innerWidth, innerHeight], worldmeta);
@@ -73,7 +73,43 @@
                     .on('contextmenu', function (event, d) {
                         event.preventDefault();
                         if (lastid !== d.properties.name) {
+                            name = d.properties.name
+                            info = d.properties.name
+                            info = name + "2014年至2022年事故总数：0"
+                            if (name == "四川") { info = "四川2014年至2022年事故总数：229"; }
+                            if (name == "山西") { info = "山西2014年至2022年事故总数：180"; }
+                            if (name == "福建") { info = "福建2014年至2022年事故总数：210"; }
+                            if (name == "河北") { info = "河北2014年至2022年事故总数：149"; }
+                            if (name == "湖南") { info = "湖南2014年至2022年事故总数：140"; }
+                            if (name == "山东") { info = "山东2014年至2022年事故总数：327"; }
+                            if (name == "湖北") { info = "湖北2014年至2022年事故总数：147"; }
+                            if (name == "青海") { info = "青海2014年至2022年事故总数：23"; }
+                            if (name == "河南") { info = "河南2014年至2022年事故总数：197"; }
+                            if (name == "陕西") { info = "陕西2014年至2022年事故总数：230"; }
+                            if (name == "江苏") { info = "江苏2014年至2022年事故总数：288"; }
+                            if (name == "北京") { info = "北京2014年至2022年事故总数：93"; }
+                            if (name == "黑龙江") { info = "黑龙江2014年至2022年事故总数：101"; }
+                            if (name == "安徽") { info = "安徽2014年至2022年事故总数：209"; }
+                            if (name == "浙江") { info = "浙江2014年至2022年事故总数：258"; }
+                            if (name == "江西") { info = "江西2014年至2022年事故总数：110"; }
+                            if (name == "广东") { info = "广东2014年至2022年事故总数：328"; }
+                            if (name == "海南") { info = "海南2014年至2022年事故总数：51"; }
+                            if (name == "甘肃") { info = "甘肃2014年至2022年事故总数：93"; }
+                            if (name == "云南") { info = "云南2014年至2022年事故总数：121"; }
+                            if (name == "广西") { info = "广西2014年至2022年事故总数：150"; }
+                            if (name == "吉林") { info = "吉林2014年至2022年事故总数：61"; }
+                            if (name == "重庆") { info = "重庆2014年至2022年事故总数：89"; }
+                            if (name == "辽宁") { info = "辽宁2014年至2022年事故总数：144"; }
+                            if (name == "贵州") { info = "贵州2014年至2022年事故总数：112"; }
+                            if (name == "新疆") { info = "新疆2014年至2022年事故总数：29"; }
+                            if (name == "内蒙古") { info = "内蒙古2014年至2022年事故总数：135"; }
+                            if (name == "上海") { info = "上海2014年至2022年事故总数：124"; }
+                            if (name == "天津") { info = "天津2014年至2022年事故总数：60"; }
+                            if (name == "宁夏") { info = "宁夏2014年至2022年事故总数：30"; }
+                            if (name == "西藏") { info = "西藏2014年至2022年事故总数：3"; }
+                            d.properties.name = info
                             tip.show(event, d)
+                            d.properties.name = name
                             lastid = d.properties.name;
                         } else {
                             tip.hide(event, d)
